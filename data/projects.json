@@ -1,0 +1,86 @@
+[
+  {
+    "repo": "enterprise-agentic-rag",
+    "title": "Enterprise Agentic RAG",
+    "color": "violet",
+    "summary": "A scalable retrieval platform combining LangGraph agents, hybrid vector + graph search, and Ray orchestration on Kubernetes.",
+    "tags": [
+      "LangGraph",
+      "Kubernetes"
+    ]
+  },
+  {
+    "repo": "careai-platform",
+    "title": "CareAI Platform",
+    "color": "cyan",
+    "summary": "A local-first enterprise MLOps and LLMOps platform for synthetic healthcare workflows, deployable to Azure Container Apps.",
+    "tags": [
+      "MLOps",
+      "Azure"
+    ]
+  },
+  {
+    "repo": "multi-agent-eval",
+    "title": "Multi-Agent Eval",
+    "color": "amber",
+    "summary": "An evaluation harness comparing leading LLMs through a multi-agent, LLM-as-judge pipeline.",
+    "tags": [
+      "Evaluation",
+      "Multi-agent"
+    ]
+  },
+  {
+    "repo": "agent-data-observability",
+    "title": "Agent Data Observability",
+    "color": "pink",
+    "summary": "Reconstruct AI agents’ database query plans from warehouse logs to expose redundancy, behavior, and cost.",
+    "tags": [
+      "Agents",
+      "Observability"
+    ],
+    "links": [
+      {
+        "text": "Read the findings",
+        "href": "https://gpatwa.github.io/agent-data-observability/"
+      },
+      {
+        "text": "Source code",
+        "href": "repo"
+      }
+    ]
+  },
+  {
+    "repo": "social-intelligence-platform",
+    "title": "Social Intelligence",
+    "color": "blue",
+    "summary": "<strong>Find the signal. Shape what’s next.</strong> A governed decision engine that turns live YouTube and X signals into approved recommendations, controlled experiments, and measurable commercial learning across Databricks and Snowflake.",
+    "extraClass": "social-intelligence",
+    "label": "LIVE PRODUCT",
+    "languageTag": false,
+    "tags": [
+      "Databricks",
+      "Snowflake",
+      "Decision Intelligence"
+    ],
+    "links": [
+      {
+        "text": "Live product",
+        "href": "https://social-intelligence-signals.gopalpatwa.chatgpt.site"
+      },
+      {
+        "text": "Source code",
+        "href": "repo"
+      }
+    ]
+  },
+  {
+    "repo": "agentic-sdlc-playbook",
+    "title": "Agentic SDLC Playbook",
+    "color": "green",
+    "summary": "A working playbook for taking software from brief to delivery with coordinated AI agents and repeatable quality gates.",
+    "tags": [
+      "Agentic SDLC",
+      "Playbook"
+    ]
+  }
+]

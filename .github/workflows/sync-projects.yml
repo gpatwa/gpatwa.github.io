@@ -1,0 +1,33 @@
+name: Sync projects
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Render project cards from data/projects.json
+        run: node scripts/sync-projects.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Open PR if the cards changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/sync-projects
+          commit-message: "Sync project cards from source repos"
+          title: "Sync project cards from source repos"
+          body: |
+            Automated refresh of the project cards from `data/projects.json` and live repo data (primary language).
+            Review the diff, then merge to publish.
+          labels: automated

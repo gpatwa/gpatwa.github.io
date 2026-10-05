@@ -24,15 +24,13 @@ function card(p, i, info) {
   const lang = p.languageTag === false ? [] : [info?.language ?? p.fallbackLanguage].filter(Boolean);
   const tags = [...lang, ...p.tags].map((t) => `<span>${esc(t)}</span>`).join("");
   const body = `<h3>${esc(p.title)}</h3><p>${p.summary}</p><div class="tags">${tags}</div>`;
-  if (!p.links) {
-    return `<a class="project ${p.color}" href="${repoUrl}" target="_blank" rel="noreferrer"><div class="project-top"><span>${n}</span><b>↗</b></div>${body}</a>`;
-  }
+  const links = p.links ?? [{ text: "View source", href: "repo" }];
   const cls = ["project", p.color, p.extraClass].filter(Boolean).join(" ");
   const label = p.label ? `${n} · ${p.label}` : n;
-  const links = p.links
+  const linkHtml = links
     .map((l, j) => `<a class="${j === 0 ? "project-link" : "project-repo"}" href="${l.href === "repo" ? repoUrl : l.href}" target="_blank" rel="noreferrer">${esc(l.text)} <span>↗</span></a>`)
     .join("");
-  return `<article class="${cls}"><div class="project-top"><span>${label}</span><b>●</b></div>${body}<div class="project-actions">${links}</div></article>`;
+  return `<article class="${cls}"><div class="project-top"><span>${label}</span><b>●</b></div>${body}<div class="project-actions">${linkHtml}</div></article>`;
 }
 
 const infos = await Promise.all(projects.map((p) => repoInfo(p.repo)));

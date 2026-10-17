@@ -45,6 +45,10 @@ jobs:
         run: |
           mkdir _site
           cp -r index.html styles.css favicon.svg og.png robots.txt sitemap.xml 404.html _site/
+          # Stamp the footer with the deploy date
+          iso=$(date -u +%F); human=$(date -u +"%b %-d, %Y")
+          sed -i -E "s|<time id=\"updated\"[^>]*>[^<]*</time>|<time id=\"updated\" datetime=\"$iso\">$human</time>|" _site/index.html
+          grep -q "datetime=\"$iso\"" _site/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
       - id: deployment

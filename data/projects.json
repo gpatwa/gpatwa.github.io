@@ -21,7 +21,8 @@
         "text": "Source code",
         "href": "repo"
       }
-    ]
+    ],
+    "featured": true
   },
   {
     "repo": "enterprise-agentic-rag",
@@ -41,7 +42,8 @@
     "tags": [
       "MLOps",
       "Azure"
-    ]
+    ],
+    "hidden": true
   },
   {
     "repo": "multi-agent-eval",

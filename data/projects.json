@@ -23,10 +23,10 @@
     "repo": "multi-agent-eval",
     "title": "Multi-Agent Eval",
     "color": "amber",
-    "summary": "An evaluation harness comparing leading LLMs through a multi-agent, LLM-as-judge pipeline.",
+    "summary": "A self-hosted harness that compares Claude, GPT, and Gemini on your own support tickets and policy, with an LLM judge, guardrail checks, and a cost and latency scorecard.",
     "tags": [
       "Evaluation",
-      "Multi-agent"
+      "LLM-as-judge"
     ]
   },
   {
@@ -75,12 +75,12 @@
   },
   {
     "repo": "agentic-sdlc-playbook",
-    "title": "Agentic SDLC Playbook",
+    "title": "Aveto: Agentic SDLC",
     "color": "green",
-    "summary": "A working playbook for taking software from brief to delivery with coordinated AI agents and repeatable quality gates.",
+    "summary": "The AI-native SDLC you can install: 28 specialist agents for Claude Code, with quality gates that fail closed.",
     "tags": [
-      "Agentic SDLC",
-      "Playbook"
+      "Claude Code",
+      "Agentic SDLC"
     ]
   }
 ]

@@ -3,7 +3,8 @@
 import { readFileSync, writeFileSync } from "node:fs";
 
 const OWNER = "gpatwa";
-const projects = JSON.parse(readFileSync("data/projects.json", "utf8"));
+// Entries with "hidden": true stay in the data file but are not rendered or checked.
+const projects = JSON.parse(readFileSync("data/projects.json", "utf8")).filter((p) => !p.hidden);
 const headers = { Accept: "application/vnd.github+json", "User-Agent": "sync-projects" };
 if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
 
@@ -25,7 +26,7 @@ function card(p, i, info) {
   const tags = [...lang, ...p.tags].map((t) => `<span>${esc(t)}</span>`).join("");
   const body = `<h3>${esc(p.title)}</h3><p>${p.summary}</p><div class="tags">${tags}</div>`;
   const links = p.links ?? [{ text: "View source", href: "repo" }];
-  const cls = ["project", p.color, p.extraClass].filter(Boolean).join(" ");
+  const cls = ["project", p.color, p.extraClass, p.featured && "featured"].filter(Boolean).join(" ");
   const label = p.label ? `${n} · ${p.label}` : n;
   const linkHtml = links
     .map((l, j) => `<a class="${j === 0 ? "project-link" : "project-repo"}" href="${l.href === "repo" ? repoUrl : l.href}" target="_blank" rel="noreferrer">${esc(l.text)} <span>↗</span></a>`)

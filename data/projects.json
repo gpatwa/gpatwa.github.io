@@ -25,6 +25,39 @@
     "featured": true
   },
   {
+    "repo": "agentic-sdlc-playbook",
+    "title": "Aveto",
+    "color": "green",
+    "summary": "The AI-native SDLC you can install: 28 specialist agents in Claude Code take a plain-language request to a tested, security-reviewed pull request, with named approvals at every gate.",
+    "tags": [
+      "Claude Code",
+      "Agentic SDLC"
+    ],
+    "label": "AGENTIC WORKFLOW",
+    "links": [
+      {
+        "text": "Visit Aveto",
+        "href": "https://aveto.dev"
+      },
+      {
+        "text": "Source code",
+        "href": "repo"
+      }
+    ]
+  },
+  {
+    "repo": "hr-timeoff-agent",
+    "title": "HR Time-off Agent",
+    "color": "cyan",
+    "label": "AGENTIC AI",
+    "summary": "An agent that recommends but cannot approve: policy evaluated in code, a LangGraph approval gate that suspends until a named human decides, a hash-chained evidence trail, and a graded eval.",
+    "tags": [
+      "LangGraph",
+      "MCP",
+      "A2A"
+    ]
+  },
+  {
     "repo": "enterprise-agentic-rag",
     "title": "Enterprise Agentic RAG",
     "color": "violet",
@@ -35,24 +68,23 @@
     ]
   },
   {
-    "repo": "careai-platform",
-    "title": "CareAI Platform",
-    "color": "cyan",
-    "summary": "A local-first enterprise MLOps and LLMOps platform for synthetic healthcare workflows, deployable to Azure Container Apps.",
-    "tags": [
-      "MLOps",
-      "Azure"
-    ],
-    "hidden": true
-  },
-  {
     "repo": "multi-agent-eval",
     "title": "Multi-Agent Eval",
     "color": "amber",
-    "summary": "A self-hosted harness that compares Claude, GPT, and Gemini on your own support tickets and policy, with an LLM judge, guardrail checks, and a cost and latency scorecard.",
+    "summary": "Choose your model vendor with evidence: a self-hosted harness comparing Claude, GPT, and Gemini on your own support tickets and policy, with independent judges, guardrail gates, and a cost and latency scorecard.",
     "tags": [
       "Evaluation",
       "LLM-as-judge"
+    ],
+    "links": [
+      {
+        "text": "Live report",
+        "href": "https://eval.aveto.dev/"
+      },
+      {
+        "text": "Source code",
+        "href": "repo"
+      }
     ]
   },
   {
@@ -73,16 +105,18 @@
         "text": "Source code",
         "href": "repo"
       }
-    ]
+    ],
+    "hidden": true
   },
   {
-    "repo": "agentic-sdlc-playbook",
-    "title": "Aveto: Agentic SDLC",
-    "color": "green",
-    "summary": "The AI-native SDLC you can install: 28 specialist agents for Claude Code, with quality gates that fail closed.",
+    "repo": "careai-platform",
+    "title": "CareAI Platform",
+    "color": "cyan",
+    "summary": "A local-first enterprise MLOps and LLMOps platform for synthetic healthcare workflows, deployable to Azure Container Apps.",
     "tags": [
-      "Claude Code",
-      "Agentic SDLC"
-    ]
+      "MLOps",
+      "Azure"
+    ],
+    "hidden": true
   }
 ]

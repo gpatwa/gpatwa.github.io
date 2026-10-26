@@ -28,7 +28,7 @@
     "repo": "enterprise-agentic-rag",
     "title": "Compass",
     "color": "violet",
-    "summary": "<strong>Agentic analytics you can trust.</strong> Ask business questions in plain language and get answers from certified metrics, with the SQL and evidence behind each number. The model never writes SQL, and risky queries pause for a named reviewer.",
+    "summary": "<strong>Agentic analytics you can trust.</strong> Ask business questions in plain language and get answers from certified metrics, with the SQL and evidence behind each number. The model never writes SQL, and risky queries pause for a named reviewer. Also includes Resolution Intelligence, which turns support tickets and knowledge into cited playbooks with human-approved actions.",
     "tags": [
       "Agentic analytics",
       "LangGraph"

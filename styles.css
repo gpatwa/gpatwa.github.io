@@ -28,3 +28,5 @@
 
 @media(min-width:821px){.project.featured{grid-column:1/-1;min-height:300px}.project.featured h3{font-size:42px;max-width:620px}.project.featured p{max-width:640px;font-size:17px}}
 .project.featured .project-actions{margin-top:26px}
+.outcome{min-height:0;padding:28px 32px 32px}.outcome h3{margin:36px 0 12px}.outcome>p{margin:0}
+@media(max-width:520px){.outcome{padding:24px}.outcome h3{margin:28px 0 12px}}

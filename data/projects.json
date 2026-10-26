@@ -25,6 +25,27 @@
     "featured": true
   },
   {
+    "repo": "enterprise-agentic-rag",
+    "title": "Compass",
+    "color": "violet",
+    "summary": "<strong>Agentic analytics you can trust.</strong> Ask business questions in plain language and get answers from certified metrics, with the SQL and evidence behind each number. The model never writes SQL, and risky queries pause for a named reviewer.",
+    "tags": [
+      "Agentic analytics",
+      "LangGraph"
+    ],
+    "label": "PILOT PRODUCT",
+    "links": [
+      {
+        "text": "Visit Compass",
+        "href": "https://salmon-ground-06555890f.4.azurestaticapps.net/welcome"
+      },
+      {
+        "text": "Source code",
+        "href": "repo"
+      }
+    ]
+  },
+  {
     "repo": "agentic-sdlc-playbook",
     "title": "Aveto",
     "color": "green",
@@ -55,16 +76,6 @@
       "LangGraph",
       "MCP",
       "A2A"
-    ]
-  },
-  {
-    "repo": "enterprise-agentic-rag",
-    "title": "Enterprise Agentic RAG",
-    "color": "violet",
-    "summary": "A scalable retrieval platform combining LangGraph agents, hybrid vector + graph search, and Ray orchestration on Kubernetes.",
-    "tags": [
-      "LangGraph",
-      "Kubernetes"
     ]
   },
   {
